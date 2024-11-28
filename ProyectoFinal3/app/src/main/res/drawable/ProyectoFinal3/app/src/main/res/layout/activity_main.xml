@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        map:cameraZoom="10"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lat: , Lon: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar" />
+
+    <TextView
+        android:id="@+id/stepCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasos: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distancia recorrida:-"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiempo transcurrido: 00:00"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/caloriesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calorias consumidas:-"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/stepsByminutesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pasos por minuto:-"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar" />
+
+</LinearLayout>
